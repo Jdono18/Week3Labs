@@ -18,37 +18,48 @@
 </head>
 
 <body class="m-3">
-    <div class="bg-info-subtle mb-4 p-4 rounded-4">
-        <h1> Student Feedback Form</h1>
+    <div class="bg-info-subtle mb-4 p-4 rounded-4 text-center">
+        <h1> Student Feedback Form </h1>
+        <p id="anonymously"> Please provide feedback you may do so anonymously</p>
     </div>
 
+    <div class="row"> <!-- new div for the row-->
+        <div class="col-md-3">
+        <h2> Instructions</h2>
+        <p> As one of our students, your thoughts and feedback are important.</p>
+        <p> Please send them using this form.</p>
+        <p> If you would like us to follow up with you, provide your contact information.</p>
 
-    <form>
-    <label class="form-label" for="student-name"> Name: </label>
-    <input class="form-control" id="student-name" type="text"> <br>
+        </div> <!-- new div column for instructions-->
 
-    <label class="form-label" for="student-email"> Email:  </label>
-    <input class="form-control" id="student-email" type="email"> <br>
+    <div class="col-md-9"> <!-- new div col for instructions-->
+        <form>
+        <label class="form-label" for="student-name"> Name: </label>
+        <input class="form-control" id="student-name" type="text"> <br>
 
-    <label class="form-label" for="comments"> Comments: </label> <br>
-    <textarea class="form-control" required id="comments" rows="15" cols="50"></textarea>  <br>
+        <label class="form-label" for="student-email"> Email:  </label>
+        <input class="form-control" id="student-email" type="email"> <br>
 
-    <p class="mx-1"> Are you a current student? </p>
+        <label class="form-label" for="comments"> Comments: </label> <br>
+        <textarea class="form-control" required id="comments" rows="15" cols="50"></textarea>  <br>
 
-    <div class="form-check">
-        <input class="form-check-input" id="is-current" name="current-student?" type="radio" checked>
-        <label class="form-check-label" for="is-current"> Yes </label>
+        <p class="mx-1"> Are you a current student? </p>
 
-    </div>
+        <div class="form-check">
+            <input class="form-check-input" id="is-current" name="current-student?" type="radio" checked>
+            <label class="form-check-label" for="is-current"> Yes </label>
 
-    <div class="form-check">
-        <input class="form-check-input" id="not-current" name="current-student?" type="radio">
-        <label class="form-check-label" for="not-current"> No </label> <br> <br>
-    </div>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" id="not-current" name="current-student?" type="radio">
+            <label class="form-check-label" for="not-current"> No </label> <br> <br>
+        </div>
 
         <input class="btn btn-primary" type="submit">
 
     </form>
-
+    </div>
+    </div>
     </body>
     </html>

@@ -5,9 +5,10 @@ body{
 
 .header{
     font-family: 'Nunito Sans', sans-serif;
-
 }
 
 h1{
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
